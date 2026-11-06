@@ -10,3 +10,6 @@ data/external/
 
 # personal trip photos (used in LinkedIn posts, not part of the repo)
 photos/
+
+# Tableau autosave/temp files
+tableau/.~*
