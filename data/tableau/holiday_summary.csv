@@ -1,0 +1,48 @@
+Holiday,Days,Lift Vs Same Weekday Pct,Signal
+Christmas,8,-15.2,traffic_cars
+Christmas Eve,8,-19.7,traffic_cars
+Election Day,4,-15.8,traffic_cars
+Halloween,8,-5.3,traffic_cars
+July 4th,9,-6.2,traffic_cars
+Labor Day,7,12.8,traffic_cars
+MLK Day,10,16.7,traffic_cars
+Memorial Day,10,13.9,traffic_cars
+New Year's Day,9,-13.8,traffic_cars
+New Year's Eve,7,-18.4,traffic_cars
+Presidents' Day,8,13.0,traffic_cars
+Thanksgiving,6,-17.7,traffic_cars
+Christmas,1,23.9,wait_minutes
+Christmas Eve,1,20.5,wait_minutes
+Halloween,1,-64.2,wait_minutes
+July 4th,2,3.1,wait_minutes
+Labor Day,2,-13.5,wait_minutes
+MLK Day,1,-7.1,wait_minutes
+Memorial Day,2,-12.7,wait_minutes
+New Year's Day,1,-34.7,wait_minutes
+New Year's Eve,1,95.7,wait_minutes
+Presidents' Day,1,-19.2,wait_minutes
+Thanksgiving,1,12.7,wait_minutes
+Christmas,9,18.0,search_interest
+Christmas Eve,9,12.7,search_interest
+Election Day,4,-6.3,search_interest
+Halloween,9,-11.4,search_interest
+July 4th,10,5.7,search_interest
+Labor Day,10,-5.2,search_interest
+MLK Day,10,-2.4,search_interest
+Memorial Day,10,6.7,search_interest
+New Year's Day,10,19.0,search_interest
+New Year's Eve,9,18.4,search_interest
+Presidents' Day,10,1.5,search_interest
+Thanksgiving,9,1.7,search_interest
+Christmas,9,6.9,crowd_index
+Christmas Eve,9,-3.9,crowd_index
+Election Day,4,-22.9,crowd_index
+Halloween,9,-25.4,crowd_index
+July 4th,10,2.3,crowd_index
+Labor Day,10,1.2,crowd_index
+MLK Day,10,9.6,crowd_index
+Memorial Day,10,25.8,crowd_index
+New Year's Day,10,6.2,crowd_index
+New Year's Eve,9,14.1,crowd_index
+Presidents' Day,10,12.6,crowd_index
+Thanksgiving,9,-8.3,crowd_index
