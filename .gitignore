@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 data/pems/
 .venv/
+
+# third-party datasets (no clear license) - download with the command in README
+data/external/
+
+# personal trip photos (used in LinkedIn posts, not part of the repo)
+photos/

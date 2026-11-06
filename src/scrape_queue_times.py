@@ -6,6 +6,7 @@ Data: Powered by Queue-Times.com (https://queue-times.com/)
 Usage:
   python3 src/scrape_queue_times.py --test                 # 10 sample days
   python3 src/scrape_queue_times.py --start 2016-01-01 --end 2025-12-31
+  python3 src/scrape_queue_times.py --dates-file data/scrape_dates.txt --park 16
 
 Saves raw HTML to data/raw/ (so re-runs skip pages already downloaded)
 and tidy CSVs to data/:
@@ -95,22 +96,27 @@ def main():
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--start")
     ap.add_argument("--end")
+    ap.add_argument("--dates-file", help="text file, one YYYY-MM-DD per line")
+    ap.add_argument("--park", type=int, choices=list(PARKS), help="scrape one park only")
     a = ap.parse_args()
+    parks = {a.park: PARKS[a.park]} if a.park else PARKS
 
     if a.test:
         dates = [date.fromisoformat(s) for s in TEST_DATES]
+    elif a.dates_file:
+        dates = [date.fromisoformat(l.strip()) for l in open(a.dates_file) if l.strip()]
     elif a.start and a.end:
         dates = list(daterange(date.fromisoformat(a.start), date.fromisoformat(a.end)))
     else:
-        ap.error("use --test or --start/--end")
+        ap.error("use --test, --dates-file or --start/--end")
 
     RAW.mkdir(parents=True, exist_ok=True)
     daily, tables = [], []
     s = requests.Session()
-    total = len(dates) * len(PARKS)
+    total = len(dates) * len(parks)
     n = 0
     for d in dates:
-        for pid, park in PARKS.items():
+        for pid, park in parks.items():
             n += 1
             print(f"[{n}/{total}] {park} {d}")
             html = fetch(pid, d, s)
