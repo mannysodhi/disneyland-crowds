@@ -1,16 +1,5 @@
-"""
-Download Caltrans PeMS "Station Day" files for District 12 (Orange County).
-
-PeMS asks batch tools to fetch files one at a time -- this script does that,
-with a pause between files, and skips files already downloaded.
-
-Usage:
-  python3 src/download_pems.py --test      # list 2024 files, download July 2024 only
-  python3 src/download_pems.py             # all months 2016-2026
-
-Your PeMS email/password are typed in Terminal (hidden) and never saved.
-Files go to data/pems/raw/
-"""
+# Downloads PeMS station-day files for District 12 (Orange County), 2016-2026.
+# Asks for your PeMS login in the terminal. Run with --test to grab one month first.
 import argparse
 import getpass
 import json

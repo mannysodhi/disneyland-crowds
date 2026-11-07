@@ -1,15 +1,5 @@
-"""
-Collect live Disneyland Resort wait times from the official Queue-Times API.
-
-Data: Powered by Queue-Times.com (https://queue-times.com/)
-
-Usage:
-  python3 src/collect_live.py --once      # one snapshot (test)
-  python3 src/collect_live.py             # every 10 min until you press Ctrl+C
-
-Appends to data/live/YYYY-MM-DD.csv:
-  snapshot_utc, park, land, ride, is_open, wait_time, last_updated
-"""
+# Saves live Disneyland + DCA wait times from the Queue-Times API to data/live/.
+# The GitHub Action runs this with --once every 15 min.
 import argparse
 import csv
 import time

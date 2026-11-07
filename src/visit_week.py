@@ -1,13 +1,5 @@
-"""
-Halloween-week spot check from the live wait-time collector (data/live/*.csv,
-saved by the GitHub Action). Compares average posted waits at Disneyland's
-headliner rides per day, Oct 19 - Nov 1, 2026.
-
-Caveat: GitHub's scheduler only captured ~3-5 snapshots per day, so this is a
-spot check, not a full-day average.
-
-Usage: python3 src/visit_week.py  ->  figures/visit_week.png
-"""
+# Wait times the week of my visit (Oct 19 - Nov 1, 2026) from the live collector.
+# Only 3-5 snapshots a day got saved, so it's a rough comparison.
 from pathlib import Path
 import glob
 

@@ -1,12 +1,8 @@
--- =====================================================================
 -- Disneyland Crowds on Special Days: holiday analysis (PostgreSQL)
 -- Data: daily car counts on the two I-5 off-ramps into Disneyland
 --       (Caltrans PeMS, cleaned in notebooks/01_explore_pems.ipynb)
--- =====================================================================
 
--- ---------------------------------------------------------------------
 -- 0. Tables
--- ---------------------------------------------------------------------
 -- Daily off-ramp traffic, one row per clean day (both sensors 100% observed)
 CREATE TABLE offramp_daily (
     date        DATE PRIMARY KEY,
@@ -27,11 +23,9 @@ CREATE TABLE special_days (
 SELECT COUNT(*), MIN(date), MAX(date) FROM offramp_daily;
 
 
--- ---------------------------------------------------------------------
 -- 1. Are special days busier than normal days?
 --    LEFT JOIN keeps every traffic day; non-holidays get day_name = NULL.
 --    Disneyland was closed 2020-03-14 to 2021-04-29 (COVID), so exclude it.
--- ---------------------------------------------------------------------
 SELECT
     CASE WHEN s.day_name IS NULL THEN 'Normal day'
          ELSE 'Special day' END       AS day_type,
@@ -44,9 +38,7 @@ GROUP BY day_type;
 -- Result: normal 14,079 cars (2,796 days) vs special 12,997 (94 days)
 
 
--- ---------------------------------------------------------------------
 -- 2. Rank each holiday vs the overall normal-day average (14,079)
--- ---------------------------------------------------------------------
 SELECT
     s.day_name,
     COUNT(*)                                          AS days,
@@ -59,11 +51,9 @@ GROUP BY s.day_name
 ORDER BY avg_cars DESC;
 
 
--- ---------------------------------------------------------------------
 -- 3. Fair comparison: each holiday vs a NORMAL day on the same weekday
 --    (weekends are naturally busier, so a holiday Monday is compared
 --     with an ordinary Monday, not with a Saturday)
--- ---------------------------------------------------------------------
 WITH clean AS (                                   -- traffic + holiday label + weekday
     SELECT o.date,
            o.total_flow,

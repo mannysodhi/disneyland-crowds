@@ -1,18 +1,5 @@
-"""
-Scrape daily Disneyland Resort crowd + wait-time pages from Queue-Times.com.
-
-Data: Powered by Queue-Times.com (https://queue-times.com/)
-
-Usage:
-  python3 src/scrape_queue_times.py --test                 # 10 sample days
-  python3 src/scrape_queue_times.py --start 2016-01-01 --end 2025-12-31
-  python3 src/scrape_queue_times.py --dates-file data/scrape_dates.txt --park 16
-
-Saves raw HTML to data/raw/ (so re-runs skip pages already downloaded)
-and tidy CSVs to data/:
-  queue_times_daily.csv   date, park, crowd_level_pct
-  queue_times_tables.csv  date, park, table, row_label, column, value
-"""
+# First try at getting 10 years of wait times by scraping Queue-Times calendar pages.
+# Didn't get usable history out of it, so I switched to the 2017-2018 dataset.
 import argparse
 import csv
 import re
