@@ -1,24 +1,6 @@
-"""
-Build the Disneyland Crowd Index: one daily 0-100 score from 3 public signals.
-
-Signals (each converted to a 0-100 percentile within its calendar year):
-  1. traffic  - cars exiting I-5 at the Disneyland off-ramps (Caltrans PeMS)
-                data/disney_offramp_daily.csv            (notebooks/01_explore_pems.ipynb)
-  2. waits    - avg posted wait at headliner rides, 2017-2018
-                data/wait_daily.csv  (src/build_wait_daily.py, Jester565/DisneylandData)
-  3. search   - weekly Google Trends interest, "Disneyland", California
-                data/trends/*.csv  (3 overlapping downloads, stitched below)
-
-Crowd Index = equal-weight average of the signals available that day.
-Days in the COVID closure (2020-03-14 to 2021-04-29) are excluded.
-
-Outputs:
-  data/crowd_index_daily.csv           one row per day, every signal + index
-  data/tableau/crowd_index_daily.csv   same, Tableau-friendly column names
-  data/tableau/holiday_summary.csv     holiday vs same-weekday lift per signal
-
-Usage:  python3 src/build_crowd_index.py
-"""
+# Combine traffic, wait times and Google Trends into one 0-100 crowd score per day.
+# Run after the notebook and build_wait_daily.py. Writes data/crowd_index_daily.csv
+# plus the CSVs I loaded into Tableau (data/tableau/).
 from pathlib import Path
 import io
 
@@ -29,7 +11,7 @@ DATA = ROOT / "data"
 CLOSED = ("2020-03-14", "2021-04-29")
 
 
-# ---------------------------------------------------------------- loaders
+# loaders
 def load_traffic():
     df = pd.read_csv(DATA / "disney_offramp_daily.csv", parse_dates=["date"])
     return df.rename(columns={"total_flow": "traffic_cars"})
@@ -76,7 +58,7 @@ def load_search():
     return days.rename(columns={"week": "date", "interest": "search_interest"})
 
 
-# ---------------------------------------------------------------- build
+# build
 def pct_rank(s, year):
     """0-100 percentile of each day *within its own calendar year*.
     Ranking inside each year removes long-term drift (e.g. Google search

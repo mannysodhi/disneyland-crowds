@@ -13,3 +13,13 @@ photos/
 
 # Tableau autosave/temp files
 tableau/.~*
+
+# local-only: Tableau build files, empty scrape output, extra charts
+tableau/
+src/make_tableau.py
+src/christmas_week_chart.py
+figures/christmas_week_2017.png
+data/tableau/dashboard_*.csv
+data/queue_times_*.csv
+data/scrape_dates.txt
+figures/*-1.png

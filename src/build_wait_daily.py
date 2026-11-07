@@ -1,15 +1,5 @@
-"""
-Turn the Jester565/DisneylandData ride-time log (every 30 min, 2017-2019)
-into one daily wait-time signal for Disneyland Park.
-
-Input  (git-ignored, download command in README):
-  data/external/disneyRideTimes.csv   rideID, dateTime, waitMins, fastPassTime, status
-  data/external/DisneylandData-*/rides.csv   id, parkID, name, land, height
-Output:
-  data/wait_daily.csv   date, avg_wait_all, avg_wait_headliners, rides_reporting
-
-Usage: python3 src/build_wait_daily.py
-"""
+# Daily average wait times from the Jester565/DisneylandData ride log (2017-2018).
+# Only Disneyland Park, 10am-9pm, days with at least 15 rides reporting.
 from pathlib import Path
 import pandas as pd
 

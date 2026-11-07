@@ -1,13 +1,4 @@
-"""
-Charts for Part 2 (the Crowd Index finale).
-
-Reads  data/crowd_index_daily.csv   (made by src/build_crowd_index.py)
-Writes figures/best_time_heatmap.png    weekday x month Crowd Index
-       figures/holiday_crowd_index.png  holidays ranked vs a normal same weekday
-       figures/signals_agree.png        weekly wait times vs Google searches, 2017-2018
-
-Usage: python3 src/part2_charts.py
-"""
+# Charts for the Crowd Index post: heatmap, holidays, waits vs searches.
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -31,7 +22,7 @@ def titles(fig, title, subtitle, source):
     fig.text(0.02, 0.02, source, fontsize=11, color=MUTED)
 
 
-# ---------------------------------------------------------------- 1. heatmap
+# 1. heatmap
 days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 grid = (df.assign(month=df["date"].dt.month)
@@ -62,7 +53,7 @@ titles(fig, f"The best time to visit Disneyland: a {days[lo[0]]} in {full[months
        f"({days[lo[0]][:3]} in {months[lo[1]]}), black = busiest ({days[hi[0]][:3]} in {months[hi[1]]})")
 fig.savefig(FIG / "best_time_heatmap.png", dpi=200); plt.close(fig)
 
-# ---------------------------------------------------------------- 2. holidays
+# 2. holidays
 hs = pd.read_csv(ROOT / "data" / "tableau" / "holiday_summary.csv")
 hs = hs[hs["Signal"] == "crowd_index"].sort_values("Lift Vs Same Weekday Pct")
 vals = hs["Lift Vs Same Weekday Pct"].values
@@ -83,7 +74,7 @@ titles(fig, "Memorial Day packs the park. Halloween empties it.",
        "Crowd Index = freeway traffic + ride waits + Google searches, 2016–2026 · COVID closure excluded")
 fig.savefig(FIG / "holiday_crowd_index.png", dpi=200); plt.close(fig)
 
-# ---------------------------------------------------------------- 3. agreement
+# 3. agreement
 w = (df.set_index("date")[["wait_minutes", "search_interest"]]
        .resample("W").mean().loc["2017-06":"2018-12"].dropna())
 r = w["wait_minutes"].corr(w["search_interest"])
