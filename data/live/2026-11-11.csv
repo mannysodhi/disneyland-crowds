@@ -177,3 +177,92 @@ snapshot_utc,park,land,ride,is_open,wait_time,last_updated
 2026-11-11T18:52:07+00:00,California Adventure,Pixar Pier,Pixar Pal-A-Round - Swinging,True,30,2026-11-11T18:50:31.000Z
 2026-11-11T18:52:07+00:00,California Adventure,Pixar Pier,Pixar Pal-A-Round – Non-Swinging,True,20,2026-11-11T18:50:31.000Z
 2026-11-11T18:52:07+00:00,California Adventure,Pixar Pier,Toy Story Midway Mania!,True,55,2026-11-11T18:50:31.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Adventureland,Adventureland Treehouse inspired by Walt Disney’s Swiss Family Robinson,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Adventureland,Indiana Jones™ Adventure,True,70,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Adventureland,Jungle Cruise,True,35,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Adventureland,Walt Disney's Enchanted Tiki Room,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Bayou Country,Davy Crockett's Explorer Canoes,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Bayou Country,The Many Adventures of Winnie the Pooh,True,25,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Bayou Country,Tiana's Bayou Adventure,True,65,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Bayou Country,Tiana's Bayou Adventure Single Rider,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,"""it's a small world""",False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Alice in Wonderland,True,35,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Casey Jr. Circus Train,True,20,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Dumbo the Flying Elephant,True,30,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,King Arthur Carrousel,True,15,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Mad Tea Party,True,20,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Matterhorn Bobsleds,True,70,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Meet Disney Princesses at Royal Hall,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Mr. Toad's Wild Ride,True,20,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Peter Pan's Flight,True,45,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Pinocchio's Daring Journey,True,20,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Sleeping Beauty Castle Walkthrough,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Snow White's Enchanted Wish,True,25,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Fantasyland,Storybook Land Canal Boats,True,25,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Frontierland,Big Thunder Mountain Railroad,True,55,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Frontierland,Frontierland Shootin' Exposition,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Frontierland,Mark Twain Riverboat,True,10,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Frontierland,Pirate's Lair on Tom Sawyer Island,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Frontierland,Sailing Ship Columbia,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,Disneyland Railroad,True,5,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,Great Moments with Mr. Lincoln,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,Main Street Cinema,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,Main Street Vehicles,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,Opera House - Walt Disney - A Magical Life,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,The Disney Gallery,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Main Street U.S.A,Walt Disney - A Magical Life,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Chip 'n' Dale's GADGETcoaster,True,35,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Donald's Duck Pond,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Goofy's How-to-Play Yard,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Mickey & Minnie's Runaway Railway,True,55,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Mickey's House and Meet Mickey Mouse,True,30,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Minnie's House,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Mickey's Toontown,Roger Rabbit's Car Toon Spin,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,New Orleans Square,Haunted Mansion Holiday,True,75,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,New Orleans Square,Pirates of the Caribbean,True,55,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Star Wars: Galaxy's Edge,Millennium Falcon: Smugglers Run,True,65,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Star Wars: Galaxy's Edge,Millennium Falcon: Smugglers Run Single Rider,True,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Star Wars: Galaxy's Edge,Star Wars: Rise of the Resistance,True,75,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Astro Orbitor,True,40,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Autopia,True,40,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Buzz Lightyear Astro Blasters,True,50,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Disneyland Monorail,True,5,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Finding Nemo Submarine Voyage,True,35,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Pixar Short Film Spotlight,False,0,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Space Mountain,True,85,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,Tomorrowland,Star Tours - The Adventures Continue,True,40,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,,Disneyland Railroad - Mickey's Toontown,True,15,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,,Disneyland Railroad - New Orleans Square,True,10,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,,Disneyland Railroad - Tomorrowland,True,15,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,Disneyland,,"Disneyland Railroad Main Street, U.S.A. Station",True,10,2026-11-12T01:05:26.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Avengers Campus,Guardians of the Galaxy - Mission: BREAKOUT!,True,85,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Avengers Campus,WEB SLINGERS: A Spider-Man Adventure,True,60,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Avengers Campus,WEB SLINGERS: A Spider-Man Adventure Single Rider,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Cars Land,Luigi's Rollickin' Roadsters,True,40,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Cars Land,Mater's Junkyard Jamboree,True,40,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Cars Land,Radiator Springs Racers,False,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Cars Land,Radiator Springs Racers Single Rider,False,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Grizzly Peak,Grizzly River Run,True,30,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Grizzly Peak,Redwood Creek Challenge Trail,False,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Grizzly Peak,Soarin’ Across America,True,45,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Hollywood Land,Animation Academy,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Hollywood Land,Mickey's PhilharMagic,True,10,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Hollywood Land,"Monsters, Inc. Mike & Sulley to the Rescue!",True,60,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Hollywood Land,Sorcerer's Workshop,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Hollywood Land,Turtle Talk with Crush,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pacific Wharf,The Bakery Tour,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Paradise Gardens Park,Golden Zephyr,True,25,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Paradise Gardens Park,Goofy's Sky School,True,75,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Paradise Gardens Park,Silly Symphony Swings,True,20,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Paradise Gardens Park,Silly Symphony Swings Single Rider,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Paradise Gardens Park,The Little Mermaid - Ariel's Undersea Adventure,True,30,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Paradise Gardens Park,World of Color – ONE,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Games of Pixar Pier,True,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Incredicoaster,False,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Incredicoaster Single Rider,False,0,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Inside Out Emotional Whirlwind,True,15,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Jessie's Critter Carousel,True,5,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Jumpin' Jellyfish,True,15,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Pixar Pal-A-Round - Swinging,True,60,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Pixar Pal-A-Round – Non-Swinging,True,45,2026-11-12T01:05:31.000Z
+2026-11-12T01:10:12+00:00,California Adventure,Pixar Pier,Toy Story Midway Mania!,True,60,2026-11-12T01:05:31.000Z
